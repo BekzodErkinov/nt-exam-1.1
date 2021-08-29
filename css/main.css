@@ -1,0 +1,66 @@
+/* ----- Variables ----- */
+:root {
+  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+  --font-color: #fff;
+  --royalblue: royalblue;
+  --border-radius: 5px;
+  --lightgray: gray;
+}
+
+/* ----- General ----- */
+body {
+  margin: auto 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-gradient);
+}
+
+/* ----- Input ----- */
+input {
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  appearance: none;
+  box-shadow: none;
+  color: var(--font-color);
+  background: var(--darkgray);
+  border-radius: var(--border-radius);
+}
+
+/* ----- Datalist ----- */
+datalist {
+  position: absolute;
+  font-size: 1rem;
+  font-family: sans-serif;
+  background: var(--lightgray);
+  border-radius: var(--border-radius);
+}
+
+/* ----- Option ----- */
+option {
+  margin-bottom: 1px;
+  padding: 8px 6px;
+  cursor: pointer;
+  color: var(--font-color);
+  background: var(--darkgray);
+  transition: all 0.5s ease;
+}
+
+option:hover {
+  background: var(--royalblue);
+}
+
+option:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+option:last-child {
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
